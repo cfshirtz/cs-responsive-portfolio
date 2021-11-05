@@ -30,17 +30,24 @@ ul {
   display: flex;
   list-style-type: none;
   width: 500px;
-  justify-content: space-around;
-  font-size: 30px;
+  justify-content: space-between;
+  font-size: 25px;
 }
 
 /*ul.show {
   display: block;
 }*/
 
-li {
-  /* width: 200px; */
+/*li+li::before {
+  width: 200px;
   text-decoration: none;
+  content: ">";
+}*/
+
+li {
+  text-decoration: none;
+  display:flex;
+  justify-content: space-evenly;
 }
 
 h1 {
@@ -97,6 +104,7 @@ p {
 
 .button:hover {
   background-color: #ef744b;
+  cursor:pointer;
 }
 
 .button:active {
